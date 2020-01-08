@@ -7,11 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="55" Margin="120,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"/>
-        <Label Content="" HorizontalAlignment="Left" Height="51" Margin="120,209,0,0" VerticalAlignment="Top" Width="147"/>
-        <Button Content="inserisci" HorizontalAlignment="Left" Margin="375,76,0,0" VerticalAlignment="Top" Width="143" Height="45" FontSize="22" FontWeight="Bold"/>
-        <Button Content="stampa" HorizontalAlignment="Left" Height="44" Margin="546,76,0,0" VerticalAlignment="Top" Width="143" FontSize="22" FontWeight="Bold"/>
-        <Button Content="pubblica" HorizontalAlignment="Left" Height="50" Margin="456,152,0,0" VerticalAlignment="Top" Width="143" FontSize="22" FontWeight="Bold"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF51FF00" Offset="0"/>
+                <GradientStop Color="#FFFB2015" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox Name="TxtInserisci" HorizontalAlignment="Left" Height="77" Margin="120,77,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="178" Background="White" FontSize="22"/>
+        <Label Name="lblrisultato" Content="" HorizontalAlignment="Left" Height="177" Margin="120,209,0,0" VerticalAlignment="Top" Width="262" Background="{x:Null}" FontSize="18"/>
+        <Button Name="BtnInserisci" Content="inserisci" HorizontalAlignment="Left" Margin="375,76,0,0" VerticalAlignment="Top" Width="143" Height="45" FontSize="22" FontWeight="Bold" Click="BtnInserisci_Click"/>
+        <Button Name="BtnStampa" Content="stampa" HorizontalAlignment="Left" Height="44" Margin="546,76,0,0" VerticalAlignment="Top" Width="143" FontSize="22" FontWeight="Bold" Click="BtnStampa_Click"/>
+        <Button Name="BtnPubblica" Content="pubblica" HorizontalAlignment="Left" Height="50" Margin="456,152,0,0" VerticalAlignment="Top" Width="143" FontSize="22" FontWeight="Bold" Click="BtnPubblica_Click"/>
 
     </Grid>
 </Window>
